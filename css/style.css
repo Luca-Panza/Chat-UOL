@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
 .Hub-superior{
 width: 100%;
 height: 80px;
-background-color:  red ; /*#FFFFFF;*/
+background-color:#FFFFFF;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 
 position: fixed;
 left: 0px;
@@ -17,7 +27,6 @@ z-index: 1;
 }
 
 .Hub-superior > img{
-    width: 75px;
     height: 53px;
     padding-left: 22px;
 }
@@ -31,11 +40,93 @@ z-index: 1;
 .Hub-central{
     width: 100%;
     height: 100%;
+    padding-bottom: 80px;
     margin-top: 106px;
-    background-color:  blue;  /* #E5E5E5;*/
     
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
+}
+
+.status {
+    width: 100%;
+    height: 100%;
+    background-color: #DCDCDC;
+
+    overflow-wrap: break-word;
+
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+
+.message{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+
+    overflow-wrap: break-word;
+
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+
+.private_message{
+    width: 100%;
+    height: 100%;
+    background-color: #FFDEDE;
+
+    overflow-wrap: break-word;
+
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+
+p {
+    padding-left: 8px;
+}
+
+.Time{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    align-items: center;
+
+    color: #AAAAAA;
+}
+
+.Name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    
+    align-items: center;
+
+    color: #000000;
+    padding-left: 4px;
+}
+
+.Message{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    align-items: center;
+
+    color: #000000;
+    padding-left:2px;
 }
 
 .Hub-inferior{
@@ -43,7 +134,8 @@ z-index: 1;
     height: 80px;
     padding-left: 18px;
     padding-right: 18px;
-    background-color:  red ; /*#FFFFFF;*/
+    background-color:#FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     
     position: fixed;
     left: 0px;
@@ -69,8 +161,19 @@ z-index: 1;
     align-items: center;
 }
 
-.Hub-inferior > ion-icon{
+.Hub-inferior > Button > ion-icon{
     Width :26px;
     Height: 26px;
-    padding-right: 40px;
 }
+
+button{
+    margin-right: 20px;
+    border:none;
+    background-color: #FFFFFF;
+}
+
+.Hub-inferior ion-icon:hover{
+    cursor:pointer;
+}
+
+

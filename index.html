@@ -7,22 +7,24 @@
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <title>UOl</title>
+    <link rel="icon" href="./Imagens/icon.png"/>
 </head>
 <body>
     <div class="Hub-superior">
         <img src="./Imagens/logo.png"/>
         <ion-icon name="people"></ion-icon>
     </div>
-    <div class="Hub-central">aaaaaa</div>
+    <div class="Hub-central" id="bottom_page"></div>
+
     <div class="Hub-inferior">
-        <input type="text" Digite aqui>
-        <ion-icon name="paper-plane-outline"></ion-icon>
+        <input type="text" id="text_written" data-test="input-message" placeholder="Digite aqui :D">
+        <button onclick= "send_message()" data-test="send-message"> <ion-icon name="paper-plane-outline"></ion-icon></button>
     </div>
 
-
-
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
